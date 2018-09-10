@@ -13,11 +13,14 @@ public class MillisecondTest {
 		long twoPoint5DaysLater = (long) (date + (2.5*24*60*60*1000)); // 2 days 12 hours later
 		long twoDays12HoursLater = date + ((2*24 + 12)*60*60*1000); // 2 days 12 hours later
 		
+		System.out.println(date);
+		System.out.println((twoDaysLater - date) / (24*60*60*1000));
+		
 		printDateTime(date);
 		printDateTime(twoDaysLater);
 		printDateTime(twoPoint5DaysLater);
 		printDateTime(twoDays12HoursLater);
-		
+		//1518291537829
 	}
 	
 	private static void printDateTime(long epoch) {
